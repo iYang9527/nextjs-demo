@@ -1,5 +1,9 @@
 import MyButton from "@/app/components/MyButton";
 import Image from "next/image";
+import MyServerComponent from "@/app/components/MyServerComponent";
+import MyClientComponent from "@/app/components/MyClientComponent";
+import MyClientComponent0 from "@/app/components/MyClientComponent0";
+
 
 function MyMain({ title }: { title: string }) {
 
@@ -22,7 +26,11 @@ function MyList(){
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-zinc-50 font-sans dark:bg-black">
+    <div>
+      <MyServerComponent />
+      <MyClientComponent />
+      <MyClientComponent0 />
+      
       <MyMain title="Hello Next.js" />
       <MyMain title="Hello 2" />
       <MyList />
